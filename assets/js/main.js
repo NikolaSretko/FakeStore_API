@@ -103,8 +103,6 @@ window.onload = function () {
 //                                 fetch Categorys
 //==============================================================================
 
-
-
 function categoryEle() {
     fetchProducts('https://fakestoreapi.com/products', 'electronics');
 }
