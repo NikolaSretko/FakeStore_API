@@ -42,6 +42,9 @@ function fetchProducts(url, category = '') {
                 newPrice.textContent = `${product.price}€`;
                 newDivContainer.appendChild(newPrice);
 
+                const priceValue = parseFloat(product.price);
+                newDivContainer.setAttribute('data-price', priceValue);
+
                 const newButton = document.createElement('button');
                 newButton.textContent = 'In den Warenkorb';
                 newDivContainer.appendChild(newButton);
@@ -64,7 +67,6 @@ function searchTerm() {
 //==============================================================================
 //                                sort function
 //==============================================================================
-
 function changeSorting() {
     const sortToggle = document.getElementById('sortToggle');
     const sortBy = parseInt(sortToggle.value);
@@ -89,6 +91,7 @@ function changeSorting() {
         productGallery.appendChild(product);
     });
 }
+
 //==============================================================================
 //                                  addEventListener
 //==============================================================================
