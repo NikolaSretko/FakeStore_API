@@ -1,5 +1,7 @@
 const productGallery = document.getElementById('productGallery');
-
+//==============================================================================
+//                                  fetch All
+//==============================================================================
 function fetchProducts(url, category = '') {
     productGallery.innerHTML = '';
     fetch(`https://fakestoreapi.com/products${category ? `/category/${category}` : ''}`)
@@ -47,6 +49,9 @@ function fetchProducts(url, category = '') {
         })
         .catch(error => console.log(error));
 }
+//==============================================================================
+//                                search function
+//==============================================================================
 
 function searchTerm() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
@@ -56,6 +61,9 @@ function searchTerm() {
         product.style.display = isVisible ? 'block' : 'none';
     });
 }
+//==============================================================================
+//                                sort function
+//==============================================================================
 
 function changeSorting() {
     const sortToggle = document.getElementById('sortToggle');
@@ -81,6 +89,9 @@ function changeSorting() {
         productGallery.appendChild(product);
     });
 }
+//==============================================================================
+//                                  addEventListener
+//==============================================================================
 
 window.onload = function () {
     document.getElementById('searchInput').addEventListener('input', searchTerm);
@@ -88,6 +99,11 @@ window.onload = function () {
 
     fetchProducts('https://fakestoreapi.com/products');
 }
+//==============================================================================
+//                                 fetch Categorys
+//==============================================================================
+
+
 
 function categoryEle() {
     fetchProducts('https://fakestoreapi.com/products', 'electronics');
