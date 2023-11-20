@@ -68,7 +68,7 @@ git clone https://github.com/dein-benutzername/dein-quiz-repo.git
 
 ## Anpassung
 
-Du kannst die Fragen, Antworten und das Styling nach deinen Wünschen anpassen. Die relevanten Dateien befinden sich in den entsprechenden Verzeichnissen ( main.js/, style.scss/).
+Du kannst die Produkte, Beschreibungen, Preis , das Styling uvm. nach deinen Wünschen anpassen. Die relevanten Dateien befinden sich in den entsprechenden Verzeichnissen ( main.js/, style.scss/).
 
 ## Technologien
 
