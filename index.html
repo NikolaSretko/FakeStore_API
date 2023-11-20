@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Super Store</h1>
+      <nav>
+        <form onsubmit="return false">
+          <input
+            type="text"
+            id="searchInput"
+            oninput="searchTerm()"
+            placeholder="Product"
+          />
+          <select name="" id="sortToggle" value="1" onchange="">
+            <option value="" disabled selected>Sort by</option>
+            <option value="2">Price - Low to High</option>
+            <option value="3">Price - High to Low</option>
+          </select>
+        </form>
+        <button onclick="categoryEle()">electronics</button>
+        <button onclick="categoryJewl()">jewelery</button>
+        <button onclick="categoryMen()">mens's clothing</button>
+        <button onclick="categoryWoma()">women's clothing</button>
+      </nav>
+    </header>
+    <main>
+      <section id="productGallery"></section>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
