@@ -38,7 +38,7 @@ Dieses Projekt ist ein einfacher Fake-Online-Shop, der Daten von APIs abruft, dy
 
 Stelle sicher, dass die folgenden Softwareversionen installiert sind:
 
-- Webbrowser: Die Anwendung wurde in [Browsername und Version] getestet und optimiert. Andere Browser können ebenfalls unterstützt werden, wurden jedoch nicht ausgiebig getestet.
+- Webbrowser: Die Anwendung wurde in Google Chrome getestet und optimiert. Andere Browser können ebenfalls unterstützt werden, wurden jedoch nicht ausgiebig getestet.
 
 ## Demo
 
