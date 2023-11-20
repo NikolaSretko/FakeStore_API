@@ -30,7 +30,6 @@ Dieses Projekt ist ein einfacher Fake-Online-Shop, der Daten von APIs abruft, dy
 
 ## Features
 
-- Light/dark mode toggle
 - Live previews
 - Fullscreen mode
 - Cross platform
